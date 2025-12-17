@@ -31,10 +31,9 @@ allow_anonymous true
 # ---------------------------------------------------------------
 listener 1884
 protocol mqtt
-allow_anonymous false
+allow_anonymous true
 
 # --- Auth Plugin Configuration (Moved inside Listener 1884) ---
-auth_plugin /usr/share/mosquitto/go-auth.so
 auth_opt_backends files,http
 auth_opt_hasher pbkdf2
 auth_opt_cache true

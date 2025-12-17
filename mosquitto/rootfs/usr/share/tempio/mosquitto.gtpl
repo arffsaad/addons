@@ -47,6 +47,7 @@ include_dir /share/{{ .customize_folder }}
 
 listener 1883
 protocol mqtt
+allow_anonymous true
 
 listener 1884
 protocol websockets
